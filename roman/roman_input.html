@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numeral Conversion</title>
+<script src="roman.js"></script>
+<body>
+
+<p>Arabic->Roman: 
+<input type="number" id="arabicin">
+<button type="button" onclick="document.getElementById('output').innerHTML += '<br />Input: ' + document.getElementById('arabicin').value + ' Output: ' + roman(document.getElementById('arabicin').value)">Convert</button>
+</p>
+<p>Roman->Arabic: 
+<input id="romanin">
+<button type="button" onclick="document.getElementById('output').innerHTML += '<br />Input: ' + document.getElementById('romanin').value + ' Output: ' + arabic(document.getElementById('romanin').value)">Convert</button>
+</p>
+
+<p id="output"></p>
+
+</body>
+</html>
